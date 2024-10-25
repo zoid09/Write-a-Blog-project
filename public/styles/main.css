@@ -1,0 +1,13 @@
+h1 {
+    color: purple;
+}
+
+#link {
+    text-decoration:  none;
+}
+
+#home_image {
+    height: 250px;
+    width: 500px;
+    
+}

@@ -1,0 +1,26 @@
+<%-include("partials/header.ejs")%>
+<h2>
+    This is Write-a-Blog, a place for people to write 
+    long-form content about their passions
+</h2>
+<form action ="/blog_post" method ="get">
+    <input type="text" placeholder="Find-a-Blog">
+    <button>Search</button>
+</form>
+<form action ="/new_post" method ="get">
+    <button>Write-a-Post</button>
+</form>
+<%-include("partials/footer.ejs")%>
+ <!--   
+    3. implement ejs for page changes and loading in any potential partials
+    4. Testing & Troubleshooting 
+    6. Use CSS to make it purtty-->
+
+<!-- What data/data model do we need?[
+    1. Array of Blog Posts
+    2. What consists of a blog posts: 
+        a) the username, 
+        b) the title, 
+        c) time of posting, 
+        d) the body of text,
+        e) Unique ID]-->

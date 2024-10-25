@@ -1,0 +1,8 @@
+<%-include("partials/header.ejs")%>
+    <h1><%= blogPosts %></h1>
+        <% for (let i= 0; i < blogPosts.length; i++ ){%>
+            <a href=<%=`blog_post/${blogPosts[i].slug}`%> id ="link"><%=blogPosts[i].slug%></a>
+        <%}%>
+<%-include("partials/footer.ejs")%>
+
+    
