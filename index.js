@@ -6,18 +6,11 @@ const port = 3000;
 let blogPosts = [
   {
     author: "Spencer",
-    title: "Welcome",
+    title: "Welcome to my website",
     date: new Date().toLocaleDateString(),
     body: "This is where text goes",
     slug: "1",
   
-  },
-  {
-    author: "Spencer",
-    title: "placeholder",
-    date: new Date().toLocaleDateString(),
-    body: "This is where text goes1",
-    slug: "2",
   },
 ];
 
@@ -29,11 +22,11 @@ app.listen(port, () => {
 });
 
 app.get("/", (req, res) => {
-  res.render("home.ejs", { blogPosts });
+  res.render("home.ejs", {blogPosts});
 });
 
 app.get("/blog_posts", (req, res) => {
-  res.render("blog_posts.ejs", { blogPosts });
+  res.render("blog_posts.ejs", {blogPosts});
 });
 
 app.get("/blog_post/:slug", (req, res) => {
@@ -43,8 +36,7 @@ app.get("/blog_post/:slug", (req, res) => {
       blogPost = blogPosts[i];
     }
   }
-  logBook(blogPost)
-  res.render("blog_post.ejs", { blogPost });
+  res.render("blog_post.ejs", {blogPost});
 });
 
 app.get("/new_post", (req, res) => {
@@ -60,7 +52,6 @@ app.post("/submit", (req, res) => {
     slug: `${blogPosts.length + 1}`,
   };
   blogPosts.push(newBlogPost);
-  console.log(blogPosts)
   res.redirect("/blog_posts");
 });
 
@@ -76,8 +67,5 @@ app.get("/contact", (req, res) => {
   res.render("contact.ejs");
 });
 
-function logBook(blogPost){
-  console.log(blogPost.title, blogPost.author, blogPost.date, blogPost.body)
-}
 
 

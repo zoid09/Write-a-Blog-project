@@ -1,8 +1,10 @@
 <%-include("partials/header.ejs")%>
-    <h1><%= blogPosts %></h1>
-        <% for (let i= 0; i < blogPosts.length; i++ ){%>
-            <a href=<%=`blog_post/${blogPosts[i].slug}`%> id ="link"><%=blogPosts[i].slug%></a>
-        <%}%>
+<h2 id ="page_header">Blog Posts</h2>
+<ul>
+    <% for (let i= 0; i < blogPosts.length; i++ ){%>
+        <li><a href=<%=`blog_post/${blogPosts[i].slug}`%> id ="link"><%=blogPosts[i].title%></a></li>  
+    <%}%>
+</ul>
 <%-include("partials/footer.ejs")%>
 
     

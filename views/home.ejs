@@ -1,14 +1,14 @@
 <%-include("partials/header.ejs")%>
-<h2>
-    This is Write-a-Blog, a place for people to write 
-    long-form content about their passions
-</h2>
-<form action ="/blog_post" method ="get">
-    <input type="text" placeholder="Find-a-Blog">
-    <button>Search</button>
-</form>
-<form action ="/new_post" method ="get">
-    <button>Write-a-Post</button>
-</form>
+<h2> A place for people to write long-form content about their passions </h2>
+<div id="search">
+    <form action ="/blog_post" method ="get">
+        <input type="text" placeholder="Find-a-Blog">
+        <button>Search</button>
+    </form>
+</div>
+<div id="post">
+    <form action ="/new_post" method ="get">
+        <button>Write-a-Post</button>
+    </form>
+</div>
 <%-include("partials/footer.ejs")%>
- <!-- i did it!-->

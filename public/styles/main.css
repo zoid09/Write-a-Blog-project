@@ -1,13 +1,133 @@
-h1 {
-    color: purple;
+.dongle-light {
+    font-family: "Dongle", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
-#link {
+body{
+    color: #54A8D4;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    color: #54D47F;
+    font-family: "Dongle", serif;
+    display: flex;
+}
+
+#banner2{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    color: #54d4bf;
+    font-family: "Dongle", serif;
+    font-size: 1.75rem;
+}
+
+#banner1{
+    font-size: 2.25rem;
+}
+
+#questions h2{
+    font-family:"Faustina", serif;
+    font-size: 1.25rem;
+    color: #3C6997;
+}
+
+#page_header{
+   color: #54d4bf;
+   font-size: 2rem; 
+}
+
+#banner1{
+    position: relative;
+    right: 150px;
+}
+
+h3 {
+    display: flex;
+}
+
+#questions h3{
+    font-family:"Faustina", serif;
+    color: #54D47F;
+}
+
+h4{
+    display: flex;
+    color: #54D47F;
+    font-family:"Faustina", serif;   
+}
+
+p{
+    display: flex;
+    font-family:"Faustina", serif;   
+}
+
+#personal_summary{
+    display: flex;
+    flex-wrap: wrap;
+    color: #54d4bf;
+}
+
+li{
+    font-family:"Faustina", serif;  
+}
+
+button{
+    border:none;
+    display: inline-flex;
+    justify-content: center;
+    height: 25px;
+    border-radius: 5px;
+    margin: 10px;
+    font-family:"Faustina", serif;
+    font-size: 13pt;
+    color: #3C6997;
+}
+
+#header_buttons{
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+#link{
     text-decoration:  none;
 }
 
-#home_image {
-    height: 250px;
-    width: 500px;
-    
+#search{
+    display: flex;
+    justify-content: center;
+}
+
+#post{
+    display: flex;
+    justify-content: center;
+}
+
+#create_post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+img{
+    display: block;
+    height: 150px;
+    width: 150px;
 }
