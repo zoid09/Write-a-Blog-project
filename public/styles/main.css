@@ -43,7 +43,7 @@ h2{
 
 #page_header{
    color: #54d4bf;
-   font-size: 2rem; 
+   font-size: 2.35rem; 
 }
 
 #banner1{
@@ -58,6 +58,18 @@ h3 {
 #questions h3{
     font-family:"Faustina", serif;
     color: #54D47F;
+    size: 1.05rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.faq{
+    font-size: 2.35rem;
+    margin-bottom: 5px;
+}
+
+.ask{
+    height: 10em;   
 }
 
 h4{
@@ -116,6 +128,40 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 15px;
+}
+
+.input{
+    height: 25px;
+    width: 50vw;
+}
+
+.text{
+    height: 25em;
+    width: 75vw;
+}
+
+.submit{
+    align-self: center;
+}
+
+.role{
+    margin-bottom: 15px;
+}
+.name{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.job{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #copyright{
@@ -128,6 +174,6 @@ button{
 
 img{
     display: block;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
 }

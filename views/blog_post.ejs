@@ -1,8 +1,16 @@
 <%-include("partials/header.ejs")%>
 <div id="article">
-    <%=blogPost.title%>
+    <div id="title">
+        <%=blogPost.title%>
+    </div>
+    <div id="author">
     <%=blogPost.author%>
+    </div>
+    <div id="date">
     <%=blogPost.date%>
+    </div>
+    <div id="body">
     <%=blogPost.body%>
+    </div>
 </div>
 <%-include("partials/footer.ejs")%>

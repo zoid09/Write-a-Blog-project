@@ -1,10 +1,10 @@
 <%-include("partials/header.ejs")%>
 <div id = "create_post">
-    <form action ="/submit" method ="post">
-        <input id="title_input" type="text" placeholder="Title" name ="title">
-        <input id="author_input"type="text" placeholder="Author" name ="author">
-        <textarea placeholder="Write-a-Post" name="body"></textarea>
-        <button>Submit</button>
+    <form id = "create_post" action ="/submit" method ="post">
+        <input class="title input" type="text" placeholder="Title" name ="title">
+        <input class= "author input" type="text" placeholder="Author" name ="author">
+        <textarea class="text" placeholder="Write-a-Post" name="body"></textarea>
+        <button class="submit">Submit</button>
     </form>
 </div>
 <%-include("partials/footer.ejs")%>
